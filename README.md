@@ -11,18 +11,18 @@ Ejercicio de la creación de una tabla en MySQL y su lectura desde Java para con
 Serie de instrucciones y ajustes que se llevaron a cabo.
 
 ## Ajustes
-Para correr este proyecto hay que modificar ``` mysql.conf.d ```:
+Para correr este proyecto hay que modificar ``` mysqld.cnf ```:
 * Hacer un respaldo de mysql.conf.d
 ```
-$ cp /etc/mysql/mysql.conf.d /etc/mysql/mysql.conf.d.bak
+$ cp /etc/mysql/mysql.conf.d/mysqld.cnf /etc/mysql/mysql.conf.d/mysqld.cnf.bak
 ```
-* Agregar en ``` mysql.conf.d ```:
+* Agregar en ``` mysqld.cnf ```:
 ```
 [mysqld]
 secure-file-priv = ""
 local-infile = 1 
 ```
-Se recomienda restaurar la configuración inicial de ``` mysql.conf.d ``` al terminar todo. 
+Se recomienda restaurar la configuración inicial de ``` mysqld.cnf ``` al terminar todo. 
 
 ## Instrucciones
 * Creación de un usuario y de la tabla base de datos ```grupos``` y de la tabla ```grupo4```
